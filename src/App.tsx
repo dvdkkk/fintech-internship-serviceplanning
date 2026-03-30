@@ -223,7 +223,7 @@ export default function App() {
                 </p>
                 <ul className="space-y-3 text-sm text-gray-400">
                   <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0" /> 기획 + 데이터 + UX 역량을 갖춘 융합형 인재로 성장 가능</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0" /> 스타트업부터 대기업까지 전 산업군에서 기획자 채용 증가</li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0" /> 실무 중심 교육을 통해 바로 현업에 투입 가능한 경쟁력 확보</li>
                 </ul>
               </div>
             </div>
