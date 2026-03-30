@@ -293,7 +293,12 @@ export default function App() {
 
       {/* Data Driven Planning */}
       <section className="py-12 bg-blue-50" id="data-driven-planning">
-        <div className="max-w-6xl mx-auto px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          className="max-w-6xl mx-auto px-6"
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">데이터를 활용한 고객분석과 서비스 기획</h2>
           <p className="text-gray-600 text-lg mb-16">구름톤 핀테크 과정은 핀테크 서비스 기획자에게 필요한 핵심 역량을 쌓도록 돕습니다. 데이터를 활용한 고객 분석을 통해 금융 서비스를 구현하는 과정을 직접 경험해보세요.</p>
           
@@ -334,10 +339,15 @@ export default function App() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="py-24 bg-white" id="fintech-training">
-        <div className="max-w-6xl mx-auto px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          className="max-w-6xl mx-auto px-6"
+        >
           <div className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">핀테크기업 맞춤형 실무교육</h2>
             <p className="text-gray-600 text-lg max-w-2xl">
@@ -363,7 +373,7 @@ export default function App() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section className="py-24 bg-gray-50" id="benefits">
@@ -490,7 +500,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-1 gap-4">
+          <div className="grid md:grid-cols-1 gap-6">
             {[
               { step: "STEP 1", title: "핀테크 산업과 서비스 리서치", desc: "핀테크 도메인 이해, 트렌드 분석, 서비스 벤치마킹\n실제 금융 데이터 흐름과 서비스 구조 파악" },
               { step: "STEP 2", title: "데이터 기반 기획을 위한 DB 설계 및 활용", desc: "Database 기본 구조, ERD 설계, DML 실습\nSQL로 데이터 웹어하우스 설계, 데이터 저장, 조회" },
@@ -500,11 +510,24 @@ export default function App() {
               { step: "STEP 6", title: "데이터 기반 서비스 기획", desc: "Step1 - Step5까지 배운 내용을 종합하여 기존 서비스의 기능 개선 기획/신규 서비스 기획\n실제 데이터에 기반한 사용자 Needs와 서비스 개선 사항을 방영한 개선 기획서 작성\n아직 개발 되지 않은 영역의 서비스를 데이터에서 발굴하고 사회적 필요와 지속 성장이 가능한 방향으로 신규 서비스 기획" },
               { step: "STEP 7", title: "기업 연계 프로젝트", desc: "핀테크 기업 현업 과제 기반의 훈련생 팀 단위 기업상주형(인턴, on-site) 프로젝트 수행\n기업 문제 해결·신규사업 기획, 개발을 통한 성과 및 훈련생 현업 경험·포트폴리오·채용 연계 제공\n기업의 실제 프로젝트를 토대로 상용 서비스에 적용되는 핵심 기능을 구현하며, 현업과 동일한 환경에서 문제 해결 능력 강화" }
             ].map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-blue-300 transition-colors">
-                <div className="text-sm font-bold text-blue-600 mb-2">{item.step}</div>
-                <h4 className="text-lg font-bold mb-3">{item.title}</h4>
-                <p className="text-sm text-gray-600 whitespace-pre-line leading-relaxed break-keep">{item.desc}</p>
-              </div>
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-200"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 font-bold text-lg">
+                    {item.step.replace("STEP ", "")}
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-3 text-gray-900">{item.title}</h4>
+                    <p className="text-gray-600 whitespace-pre-line leading-relaxed break-keep">{item.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
             ))}
           </div>
           <p className="text-left text-sm text-gray-400 mt-8">* 로드맵 및 커리큘럼은 교육 과정 운영 상황에 따라 일부 변경될 수 있습니다.</p>
