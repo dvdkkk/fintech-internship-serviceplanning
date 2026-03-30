@@ -196,7 +196,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-800 rounded-3xl border border-gray-700 overflow-hidden flex flex-col">
               <div className="h-56 w-full overflow-hidden">
-                <img src="https://postfiles.pstatic.net/MjAyNjAzMjZfMjIg/MDAxNzc0NTA1NjQwMDgz.PV_zR1Jnc7E5FFLIxy04VzYRnbfxxJa-qURdwf09V8Mg.ZZGCI38s5DNVpbcu12tGQMkYTWUgqZt90tPTGRzyHKYg.JPEG/image_(32).jpg?type=w966" alt="핀테크 산업의 무한 확장" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                <img src="https://postfiles.pstatic.net/MjAyNjAzMjZfMzAw/MDAxNzc0NTA1NjQwNjky.nHOdptDNxuiJTyhsfW3-NR6PfyCPyEXABmmZTJnpP3cg.fUjojcA7LA1lxqUNp9hpAb_bTZDXOEmuoVLQSn5UiS8g.JPEG/image_(35).jpg?type=w966" alt="핀테크 산업의 무한 확장" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
               </div>
               <div className="p-10 flex-1">
                 <Globe className="w-12 h-12 text-blue-400 mb-6" />
@@ -212,7 +212,7 @@ export default function App() {
             </div>
             <div className="bg-gray-800 rounded-3xl border border-gray-700 overflow-hidden flex flex-col">
               <div className="h-56 w-full overflow-hidden">
-                <img src="https://postfiles.pstatic.net/MjAyNjAzMjZfMTU4/MDAxNzc0NTA1NjQwMDM3.Jk1c_meMQ9R5eCL2V8ar1UnZAYSDTdSPQCGQmLHw2nEg.CLpkqAYlY39s7Xi7oOqB2LL0qEwfR_Xb3skTjy9myzcg.JPEG/image_(33).jpg?type=w966" alt="취업 시장에서 경쟁력 있는 개발자로 성장" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                <img src="https://postfiles.pstatic.net/MjAyNjAzMjZfMTM4/MDAxNzc0NTA1NjQwMDYx.XhDsGVKtbPcdBoxAzaqa-XNfaHavYLadhmiY7ohn-G0g.lVSpQTEGnG0RKFYoZEGrUcWtAVBW37FEdXAIk_EiOJUg.JPEG/image_(37).jpg?type=w966" alt="취업 시장에서 경쟁력 있는 개발자로 성장" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
               </div>
               <div className="p-10 flex-1">
                 <TrendingUp className="w-12 h-12 text-indigo-400 mb-6" />
@@ -356,8 +356,8 @@ export default function App() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { image: "https://postfiles.pstatic.net/MjAyNjAzMjZfMTc1/MDAxNzc0NTA1NjQwNzAy.Q3eGrbL75yJ66P5Qe7Kl1pVzongKY6_-62B9oEXq5lkg.gTfL09ecjc0ra3K4iLMQaB19_T8hDXPKGFwTgLxnGhQg.JPEG/image_(34).jpg?type=w966", icon: Building2, title: "데이터 분석 기반 서비스 기획", desc: "핀테크 서비스 운영에 필요한 실무 중심의 데이터 분석 역량을 학습합니다." },
-              { image: "https://postfiles.pstatic.net/MjAyNjAzMjZfMzAw/MDAxNzc0NTA1NjQwNjky.nHOdptDNxuiJTyhsfW3-NR6PfyCPyEXABmmZTJnpP3cg.fUjojcA7LA1lxqUNp9hpAb_bTZDXOEmuoVLQSn5UiS8g.JPEG/image_(35).jpg?type=w966", icon: Cloud, title: "실무 밀착형 프로젝트 수행 능력", desc: "금융 데이터를 활용해 기업의 요구 과제를 직접 수행합니다." },
+              { image: "https://postfiles.pstatic.net/MjAyNjAzMjZfMjIg/MDAxNzc0NTA1NjQwMDgz.PV_zR1Jnc7E5FFLIxy04VzYRnbfxxJa-qURdwf09V8Mg.ZZGCI38s5DNVpbcu12tGQMkYTWUgqZt90tPTGRzyHKYg.JPEG/image_(32).jpg?type=w966", icon: Building2, title: "데이터 분석 기반 서비스 기획", desc: "핀테크 서비스 운영에 필요한 실무 중심의 데이터 분석 역량을 학습합니다." },
+              { image: "https://postfiles.pstatic.net/MjAyNjAzMjZfMTU4/MDAxNzc0NTA1NjQwMDM3.Jk1c_meMQ9R5eCL2V8ar1UnZAYSDTdSPQCGQmLHw2nEg.CLpkqAYlY39s7Xi7oOqB2LL0qEwfR_Xb3skTjy9myzcg.JPEG/image_(33).jpg?type=w966", icon: Cloud, title: "실무 밀착형 프로젝트 수행 능력", desc: "금융 데이터를 활용해 기업의 요구 과제를 직접 수행합니다." },
               { image: "https://postfiles.pstatic.net/MjAyNjAzMjZfMTU0/MDAxNzc0NTA1NjQwNjU1.MGNrBqSGp_YCkV7P9-l4ECcX8p2Q6oij8DBo-0Z7IWgg.oDn05bJJNqHC2EHqlhZa5cq0Oywyhk3uLqYLY2lYI7Ug.JPEG/image_(36).jpg?type=w966", icon: Layers, title: "로직 구현을 위한 문제 해결 역량", desc: "핀테크에 특화된 로직을 구현하기 위해 다양한 미션들을 경험합니다." },
               
             ].map((item, idx) => (
