@@ -305,7 +305,7 @@ export default function App() {
                 examples: ["저축 습관 분석을 통한 맞춤형 저축 상품 제안", "투자 성향에 기반한 맞춤형 포트폴리오 추천"]
               },
               {
-                title: "2. 맞춤형 금융 상품 개발",
+                title: "2. 맞춤 금융상품 개발",
                 desc: "연령, 성별, 소득 등 고객의 프로파일을 바탕으로 맞춤형 금융 상품을 설계합니다.",
                 examples: ["맞춤형 금융 상품 추천 시스템 구축", "특정 성향에 맞춘 저축/투자 상품 개발"]
               },
@@ -338,9 +338,9 @@ export default function App() {
       </section>
       <section className="py-24 bg-white" id="fintech-training">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">핀테크 기업 맞춤형 실무 교육</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <div className="text-left mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">핀테크기업 맞춤형 실무교육</h2>
+            <p className="text-gray-600 text-lg max-w-2xl">
               핀테크 기업들의 채용 니즈를 커리큘럼에 반영했습니다. 데이터 분석과 실무 역량을 두루 갖춘 서비스 기획자로 성장하세요.
             </p>
           </div>
@@ -704,7 +704,7 @@ export default function App() {
 
             {/* Education Center (Moved to bottom) */}
             <div className="bg-gray-50 p-10 rounded-3xl border border-gray-100">
-              <h2 className="text-3xl font-bold mb-4">집중하기 좋은<br/>역삼역 1분 거리 교육장</h2>
+              <h2 className="text-3xl font-bold mb-4">역삼역 1분 거리!<br/>집중하기 좋은 교육장</h2>
               <p className="text-gray-600 mb-8 break-keep">
                 교육생은 강남 교육장 회의실을 무료로 이용할 수 있습니다.<br/>
                 <span className="text-sm text-gray-500">(위치: 서울 강남구 테헤란로 145 13, 14층)</span>
