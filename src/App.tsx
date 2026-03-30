@@ -641,16 +641,16 @@ export default function App() {
             <h3 className="text-2xl font-bold mb-4 text-center">취업기회 확실한 기업 연계 코스</h3>
             <div className="grid md:grid-cols-3 gap-3">
               {[
+                { title: "우수 수료생 혜택", desc: "핀테크 인턴십 코스 연계 기업 지원 시 서류 전형 면제", highlight: true },
                 { title: "대표 핀테크 기업 협력", desc: "국내 대표 핀테크 기업과 함께하는 실무 중심 커리큘럼" },
                 { title: "기업 연계 프로젝트", desc: "핀테크 기업의 실제 프로젝트 수행 기회 제공" },
-                { title: "우수 수료생 혜택", desc: "핀테크 인턴십 코스 연계 기업 지원 시 서류 전형 면제" },
                 { title: "맞춤형 잡 매칭 서비스", desc: "‘핀테크 일자리 매칭 플랫폼’ 통한 구인 등록 및 관리 지원" },
                 { title: "전문 상담사의 취업 컨설팅", desc: "‘일자리매칭존’ 통한 전문가의 취업 상담 제공" },
                 { title: "현직자 네트워킹 행사", desc: "전문가 만남 통해 최신 기술 및 업계 동향 파악" }
               ].map((item, idx) => (
-                <div key={idx} className="bg-gray-800/50 p-6 rounded-2xl border border-gray-700/50">
-                  <h4 className="font-bold text-lg mb-2 text-blue-300">{item.title}</h4>
-                  <p className="text-gray-400 text-sm break-keep">{item.desc}</p>
+                <div key={idx} className={`p-6 rounded-2xl border ${item.highlight ? 'bg-blue-900 border-blue-500 shadow-lg' : 'bg-gray-800/50 border-gray-700/50'}`}>
+                  <h4 className={`font-bold text-lg mb-2 ${item.highlight ? 'text-yellow-400' : 'text-blue-300'}`}>{item.title}</h4>
+                  <p className={`text-sm break-keep ${item.highlight ? 'text-blue-100' : 'text-gray-400'}`}>{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -795,7 +795,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="text-sm font-bold text-gray-800">교육방식</div>
-                  <div className="text-2xl font-extrabold text-black">100%온라인</div>
+                  <div className="text-2xl font-extrabold text-black">50%온라인 + 50%오프라인</div>
                 </div>
               </div>
             </div>
